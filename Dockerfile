@@ -8,7 +8,7 @@ RUN curl -sSLo filebrowser.tar.gz 'https://github.com/filebrowser/filebrowser/re
     mkdir -p /tmp/filebrowser && \
     tar -xvf filebrowser.tar.gz -C /tmp/filebrowser && \
     mv /tmp/filebrowser/filebrowser /filebrowser && \
-    rm -f filebrowser.tar.gz /tmp/filebrowser
+    rm -rf filebrowser.tar.gz /tmp/filebrowser
 
 WORKDIR /data
 
